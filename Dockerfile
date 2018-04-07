@@ -7,6 +7,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update; \
 ADD vhost.conf /etc/apache2/sites-available
 
 RUN a2ensite vhost.conf; \
+	a2dissite 000-default.conf; \
 	a2enmod proxy; \
 	a2enmod proxy_http; \
 	a2enmod authnz_ldap
