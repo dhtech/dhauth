@@ -19,5 +19,6 @@ ENV APACHE_LOG_DIR /var/log/apache2
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
+EXPOSE 80
 
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
