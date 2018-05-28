@@ -17,6 +17,8 @@ ENV APACHE_PID_FILE /etc/apache2/apache2.pid
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
+ENV LDAP_SERVER ldap.ldap
+ENV LDAP_URL cn=everyone,dc=tech,dc=dreamhack,dc=se
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
