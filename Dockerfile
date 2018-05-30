@@ -1,4 +1,4 @@
-From debian:stretch
+From debian:testing-slim
 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update; \
